@@ -5,5 +5,26 @@
  */
 
 module.exports = {
-  /* Your site config here */
+    siteMetadata: {
+      title: `Duy Linh's Blog`,
+      description: `My personal blog, I post everything that I am interested in.`,
+      author: `Duy Linh Nguyen`,
+    },
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+  ],
 }
