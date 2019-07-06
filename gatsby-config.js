@@ -19,6 +19,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typography`,
